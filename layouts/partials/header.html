@@ -5,7 +5,7 @@
     {{ range .Site.Menus.main }}
     <li class="main-nav__item"><a class="nav-main-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (eq ($currentPage.Permalink) (.URL | absLangURL)) }} active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a></li>
     {{ end }}
-    <li class="main-nav__item"><a href="{{ .Site.Params.Resume.File }}" download>resume</a></li>
+    <li class="main-nav__item"><a href="/{{ .Site.Params.Resume.File }}" download>resume</a></li>
     </ul>
 </nav>
 
