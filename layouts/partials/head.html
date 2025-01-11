@@ -5,7 +5,7 @@
 <meta charset="UTF-8"/>
 {{ if .Site.Params.noindex }}<meta name="robots" content="noindex" /> {{ end }}
 <meta property="og:title" content="{{ .Site.Params.Preview.Title }}"/>
-<meta property="og:image" content="{{ .Site.Params.Preview.Image }}"/>
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.Preview.Image }}"/>
 <meta property="og:description" content="{{ .Site.Params.Preview.Description }}"/>
 <meta property="og:image:width" content="{{ .Site.Params.Preview.ImageWidth }}" />
 <meta property="og:image:height" content="{{ .Site.Params.Preview.ImageHeight }}"/>
