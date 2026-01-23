@@ -1,5 +1,7 @@
 # risotto (development version)
 
+* Added colour scheme screenshots to README (#48)
+
 # risotto 0.5.0
 
 * **Breaking change:** The config parameter `logo` now expects a character, e.g. an emoji or Unicode symbol.
